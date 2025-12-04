@@ -105,6 +105,7 @@ body {
     .secao_logo {
         position: relative;
         margin-top: 50px;
+        margin-left: 5px;
     }
 
     .secao_logo svg {
@@ -117,16 +118,17 @@ body {
     }
 
     .secao_logo img {
-        width: 200px;
-        margin-left: 10px;
+        width: 300px;
+        margin-left: 30px;
     }
     .secao_logo img.DomusEletro {
-        width: 200px;
+        width: 300px;
         margin-top: 100px;
         margin-right: 0;
+        margin-left: 10px;
     }
 
-    .secao_cards {
+    .secao_categorias {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
@@ -134,7 +136,7 @@ body {
         gap: 24px;
         margin-top: 32px;
     }
-    .secao_cards .card_categoria {
+    .cards .card_categoria {
         flex: 1 1 220px;
         max-width: 260px;
         min-width: 180px;
