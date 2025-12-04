@@ -53,7 +53,9 @@ export default function Header() {
                         </Nav.Item>
 
                         <Nav.Item>
+                            <Link to = "/produtos/cadastro" className="link_cadastro">
                             <h1>Domus<span>Eletro</span></h1>
+                            </Link>
                         </Nav.Item>
 
                     </Nav>
