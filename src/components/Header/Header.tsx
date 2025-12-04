@@ -1,0 +1,65 @@
+import { Nav, Navbar } from "react-bootstrap";
+import './Header.css'
+import { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom';
+
+export default function Header() {
+   
+    
+    const [pesquisa, setPesquisa] = useState<string>("");
+    const navigate = useNavigate();
+
+    const handleSearch = () => {
+        navigate (`/produtos/pesquisa?query=${encodeURIComponent(pesquisa)}`)
+    }
+
+    const handleKeyDown = (evento: React.KeyboardEvent<HTMLInputElement>) => {
+        if (evento.key === 'Enter') {
+            handleSearch();
+        }
+    }
+
+    return (
+        <header>
+            <Navbar expand="lg" className="container_cabecalho">
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="me-auto conteudo-nav">
+
+                        <Nav.Item>
+                            <Link to="/">
+                            <svg className="icone_home" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512">
+                                <path fill="currentColor"
+                                    d="M256 32a224 224 0 1 1 0 448 224 224 0 1 1 0-448zm0 480a256 256 0 1 0 0-512 256 256 0 1 0 0 512zM240 352l0-64 32 0 0 64-32 0zm-32 0l-24 0c-13.3 0-24-10.7-24-24l0-121.1 96-74.7 96 74.7 0 121.1c0 13.3-10.7 24-24 24l-24 0 0-64c0-17.7-14.3-32-32-32l-32 0c-17.7 0-32 14.3-32 32l0 64zM128 231.8l0 96.2c0 30.9 25.1 56 56 56l144 0c30.9 0 56-25.1 56-56l0-96.2 6.2 4.8c7 5.4 17 4.2 22.5-2.8s4.2-17-2.8-22.5l-144-112c-5.8-4.5-13.9-4.5-19.6 0l-144 112c-7 5.4-8.2 15.5-2.8 22.5s15.5 8.2 22.5 2.8l6.2-4.8z" />
+                            </svg>
+                            </Link>
+                        </Nav.Item>
+
+                        <Nav.Item>
+                            <div className="box_busca" id="box_busca">
+                                <svg className="icone_lupa" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 512 512">
+                                    <path fill="currentColor"
+                                        d="M368 208a160 160 0 1 0 -320 0 160 160 0 1 0 320 0zM337.1 371.1C301.7 399.2 256.8 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208c0 48.8-16.8 93.7-44.9 129.1L505 471c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L337.1 371.1z" />
+                                </svg>
+                                <input className="campo_busca"
+                                type="text"
+                                value={pesquisa}
+                                onChange={p => setPesquisa(p.target.value)}
+                                onKeyDown={handleKeyDown}
+                                placeholder='pesquisar'
+                            />
+                            </div>
+                        </Nav.Item>
+
+                        <Nav.Item>
+                            <h1>Domus<span>Eletro</span></h1>
+                        </Nav.Item>
+
+                    </Nav>
+                </Navbar.Collapse>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" className='ms-auto' />
+            </Navbar>
+        </header>
+    )
+}

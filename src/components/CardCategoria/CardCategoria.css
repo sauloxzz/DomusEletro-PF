@@ -1,0 +1,48 @@
+.card_categoria {
+    margin: 50px 0;
+    width: 260px;
+    height: 360px;
+    text-decoration: none;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 10px 10px 40px 10px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    box-shadow: 0 0 40px 2px #00000075;
+}
+
+.card_geladeira {
+    background-color: #D9D9D9;
+}
+
+.card_microondas {
+    background-color: #D9D9D9;
+}
+
+.card_fornos {
+    background-color: #D9D9D9
+}
+
+.card_sanduicheiras {
+    background-color: #D9D9D9
+}
+
+.card_liquidificadores {
+    background-color: #D9D9D9
+}
+
+.card_cafeteiras {
+    background-color: #D9D9D9
+}
+
+.card_categoria svg:first-child {
+    width: 26px;
+    align-self: flex-end;
+}
+
+.svg_geladeira {
+    width: 150px;
+}

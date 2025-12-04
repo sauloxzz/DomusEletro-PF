@@ -1,0 +1,81 @@
+header {
+  background-color: #1B5C88;
+}
+
+
+header svg{
+  color: #ffffff;
+
+}.icone_lupa {
+  color: #000000;
+}
+
+header h1{
+  color: white;
+}
+
+
+
+
+.container_cabecalho {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1440px;
+  /* background-color: aquamarine; */
+  margin: 0 auto;
+  height: 100%;
+  align-items: center;
+}
+
+.conteudo-nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icone_home {
+  height: 50px;
+}
+
+.box_busca {
+  position: relative;
+  width: 500px;
+}
+
+.icone_lupa {
+  height: 24px;
+  position: absolute;
+  left: 9px;
+  top: 9px;
+  fill: #b0b0b0;
+}
+
+.logo {
+  height: 60px;
+}
+
+.campo_busca {
+  width: 100%;
+  height: 42px;
+  border-radius: 10px;
+  border: solid 1px #cccccc;
+  padding-left: 2.5rem;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .me-auto{
+        align-items: end;
+    }
+    .logo {
+        margin: 1rem 0;
+    }
+    .icone_home{
+        margin-bottom: 5px;
+    }
+    .box_busca{
+        width: 100%;
+    }
+}
