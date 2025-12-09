@@ -24,7 +24,7 @@ header {
   color: #ffffff;
 }
 
-header h1{
+header h1 {
   color: #ffffff;
 }
 
@@ -83,6 +83,32 @@ header h1{
 }
 
 
+.box_cadastro input[type="text"],
+.box_cadastro textarea {
+  border-radius: 10px;
+  border: solid 1px #B3B3B3;
+  font-size: 18px;
+  padding: 0 5px;
+
+}
+
+
+.box_cadastro {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1440px;
+  cursor: pointer;
+  gap: 1rem;
+  /* background-color: aquamarine; */
+}
+
+.cadastro_coluna1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 
 
@@ -110,7 +136,7 @@ header h1{
   margin-bottom: 100px;
 }
 
-.box_cadastro {
+.itens_cadastro {
   display: flex;
   justify-content: space-between;
   width: 90%;
@@ -119,14 +145,11 @@ header h1{
   /* background-color: aquamarine; */
 }
 
-.cadastro_coluna1 {
-  /* background-color: lightgreen; */
-  width: 45%;
-}
+
 
 .cadastro_coluna2 {
   /* background-color: lightskyblue; */
-  width: 45%;
+  width: 50%;
 }
 
 .categoria_img {
@@ -149,18 +172,9 @@ header h1{
   font-size: 20px;
 }
 
-.box_cadastro input[type="text"],
-.box_cadastro textarea {
-  border-radius: 10px;
-  border: solid 1px #B3B3B3;
-  font-size: 18px;
-  padding: 0 5px;
-
-}
 
 .box_cadastro input[type="text"] {
   height: 40px;
-  margin-bottom: 20px;
 }
 
 .categoria {
@@ -169,7 +183,7 @@ header h1{
 
 .box_cadastro textarea {
   resize: none;
-  height: 200px;
+  height: 150px;
   border-radius: 20px;
 }
 

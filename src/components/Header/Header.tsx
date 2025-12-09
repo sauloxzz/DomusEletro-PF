@@ -2,6 +2,7 @@ import { Nav, Navbar } from "react-bootstrap";
 import './Header.css'
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
+import DomusEletro from "../../assets/DomusEletro.png"
 
 export default function Header() {
    
@@ -35,8 +36,7 @@ export default function Header() {
                             </Link>
                         </Nav.Item>
 
-                        <Nav.Item>
-                            <div className="box_busca" id="box_busca">
+                            <Nav.Item className="box_busca" id="box_busca">
                                 <svg className="icone_lupa" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 512 512">
                                     <path fill="currentColor"
@@ -49,12 +49,11 @@ export default function Header() {
                                 onKeyDown={handleKeyDown}
                                 placeholder='pesquisar'
                             />
-                            </div>
-                        </Nav.Item>
+                            </Nav.Item>
 
                         <Nav.Item>
                             <Link to = "/produtos/cadastro" className="link_cadastro">
-                            <h1>Domus<span>Eletro</span></h1>
+                            <img src={DomusEletro} alt="" />
                             </Link>
                         </Nav.Item>
 

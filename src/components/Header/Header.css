@@ -8,6 +8,11 @@ header svg{
 
 }.icone_lupa {
   color: #000000;
+  height: 24px;
+  position: absolute;
+  left: 9px;
+  top: 9px;
+  fill: #b0b0b0;
 }
 
 header h1{
@@ -42,14 +47,7 @@ header h1{
 .box_busca {
   position: relative;
   width: 500px;
-}
-
-.icone_lupa {
-  height: 24px;
-  position: absolute;
-  left: 9px;
-  top: 9px;
-  fill: #b0b0b0;
+  height: 42px;
 }
 
 .logo {
@@ -69,8 +67,9 @@ header h1{
     .me-auto{
         align-items: end;
     }
-    .logo {
+    .DomusEletro {
         margin: 1rem 0;
+        width: 20px;
     }
     .icone_home{
         margin-bottom: 5px;
