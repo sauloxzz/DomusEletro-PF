@@ -1,12 +1,15 @@
 header {
   background-color: #1B5C88;
+  padding: 1rem 0
 }
 
 
-header svg{
+header svg {
   color: #ffffff;
 
-}.icone_lupa {
+}
+
+.icone_lupa {
   color: #000000;
   height: 24px;
   position: absolute;
@@ -15,7 +18,7 @@ header svg{
   fill: #b0b0b0;
 }
 
-header h1{
+header h1 {
   color: white;
 }
 
@@ -33,11 +36,11 @@ header h1{
   align-items: center;
 }
 
-.conteudo-nav{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
+.conteudo-nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .icone_home {
@@ -64,17 +67,40 @@ header h1{
 }
 
 @media screen and (max-width: 768px) {
-    .me-auto{
-        align-items: end;
-    }
-    .DomusEletro {
-        margin: 1rem 0;
-        width: 20px;
-    }
-    .icone_home{
-        margin-bottom: 5px;
-    }
-    .box_busca{
-        width: 100%;
-    }
+  .me-auto {
+    align-items: center;
+  }
+
+  .DomusEletro {
+    margin: 1rem 0;
+    width: 20px;
+  }
+
+  .logoDomus {
+    margin: 1rem 0;
+  }
+
+  .box_busca {
+    width: 100%;
+  }
+
+  .conteudo-nav .box_busca {
+    margin: 20px 0;
+  }
+
+  button .navbar-toggler-icon {
+    background-image: url(../../assets/bars-solid-full.svg);
+  }
+
+  .navbar-toggler {
+    border-color: #ffffff;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: 0px 0px 5px lightblue;
+  }
+
+  .categoria_img {
+    margin-top: 10px;
+  }
 }

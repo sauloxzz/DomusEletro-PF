@@ -15,10 +15,7 @@ body {
   background-color: #9EA4B0;
 }
 
-header {
-  background-color: var(--corPrincipal);
-  height: 100px;
-}
+
 
 .icone_home {
   color: #ffffff;
@@ -88,15 +85,14 @@ header h1 {
   border-radius: 10px;
   border: solid 1px #B3B3B3;
   font-size: 18px;
-  padding: 0 5px;
-
+  padding: 0.5rem 1rem;
 }
 
 
 .box_cadastro {
   display: flex;
   justify-content: space-between;
-  width: 90%;
+  width: 100%;
   max-width: 1440px;
   cursor: pointer;
   gap: 1rem;
@@ -163,7 +159,8 @@ header h1 {
 .valor,
 .img,
 .categoria,
-.item {
+.item,
+.preco {
   display: flex;
   flex-direction: column;
 }
@@ -178,7 +175,7 @@ header h1 {
 }
 
 .categoria {
-  width: 70%;
+  width: 30%;
 }
 
 .box_cadastro textarea {
@@ -187,15 +184,16 @@ header h1 {
   border-radius: 20px;
 }
 
-.container_cadastro input[type="button"] {
-  font-size: 26px;
-  margin: 50px 0;
+.botaoSubmit {
+  font-size: 24px;
+  margin-top: 50px;
   border-radius: 10px;
-  border: none;
   background-color: var(--corPrincipal);
   padding: 10px 200px;
-  box-shadow: 0 4px 4px 2px #00000025;
+  font-family: var(---fontcomplementar);
   cursor: pointer;
+  color: #ffffff;
+  border: #ffffff;
 }
 
 .img {
@@ -221,12 +219,14 @@ input[type="file"] {
   cursor: pointer;
 }
 
-.valor {
-  width: 50%;
+
+.preco input {
+  height: 30px;
+  border-radius: 10px;
+  border: solid 1px #B3B3B3;
+  padding: 0 5px;
+  width: 100%;
 }
-
-
-
 
 
 
@@ -278,7 +278,7 @@ footer p {
 
 
 /* MEDIA */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1080px) {
   table {
     width: 98%;
   }
@@ -294,7 +294,7 @@ footer p {
     width: 100%;
   }
 
-  .container_cadastro input[type="button"] {
+  .botaoSubmit {
     padding: 10px 100px;
   }
 
@@ -316,6 +316,8 @@ footer p {
     border-radius: var(--arredondamento);
     border: solid 1px var(--corPrincipal);
     box-shadow: var(--sombra);
+    margin: 30px 10px;
+    padding: 0.5rem;
   }
 
   td {
@@ -331,5 +333,12 @@ footer p {
   td:last-child {
     align-self: flex-end;
   }
+
+
+  .categoria_img {
+    align-items: center;
+    gap: 1rem;
+  }
+
 
 }

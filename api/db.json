@@ -120,7 +120,7 @@
         "Liquidificador Philco.jpg"
       ],
       "id": "l1",
-      "preco": 119.90,
+      "preco": 119.9,
       "peso": null
     },
     {
@@ -185,7 +185,7 @@
         "Sanduicheira Britania antiaderente.jpg"
       ],
       "id": "s1",
-      "preco": 229.90,
+      "preco": 229.9,
       "peso": null
     },
     {
@@ -198,7 +198,7 @@
         "Sanduicheira E Grill Black.jpg"
       ],
       "id": "s2",
-      "preco": 139.90,
+      "preco": 139.9,
       "peso": null
     },
     {
@@ -211,7 +211,7 @@
         "Sanduicheira Mondial.jpg"
       ],
       "id": "s3",
-      "preco": 159.90,
+      "preco": 159.9,
       "peso": null
     },
     {
@@ -224,7 +224,7 @@
         "Cafeteira multifuncional.jpg"
       ],
       "id": "c1",
-      "preco": 160.00,
+      "preco": 160,
       "peso": null
     },
     {
@@ -237,7 +237,7 @@
         "Cafeteira de café expresso.jpg"
       ],
       "id": "c2",
-      "preco": 149.00,
+      "preco": 149,
       "peso": null
     }
   ]

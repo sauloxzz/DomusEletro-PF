@@ -53,7 +53,7 @@ export default function Header() {
 
                         <Nav.Item>
                             <Link to = "/produtos/cadastro" className="link_cadastro">
-                            <img src={DomusEletro} alt="" />
+                            <img className="logoDomus" src={DomusEletro} alt="" />
                             </Link>
                         </Nav.Item>
 
